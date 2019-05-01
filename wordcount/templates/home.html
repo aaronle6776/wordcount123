@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar">
+                <ul class="">
+                    <li><a href="">You</a></li>
+                    <li><a href="">Are</a></li>
+                    <li><a href="">Welcome</a></li>
+                    <li><a href="">To</a></li>
+                    <li><a href="">My homepage</a></li>
+                </ul>
+                
+            </nav>
+            <div class="container">
+                <img class="count" src="http://www.burnet.edu.au/system/asset/file/1244/Count_colour_web.jpg" width="600" height="200" alt="">
+                <br>
+                <br>
+                
+                <form action="{%url 'result'%}">
+                        <textarea class="search" cols="40" rows="10" name="fulltext"></textarea>
+                        <br>
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="Count!">
+                    
+                    </form>
+
+                <br>
+                <a href="{%url 'about'%}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" >ABOUT</a>
+               <br><br>
+            
+                <p class="오퍼드"> WordCount offered by : SH</p>
+            </div>
+            <footer>
+                    <nav class="foot-nav">
+                        <ul class="item-left">
+        
+                            <li><a href="{%url 'about'%}">About</a></li>
+                            <li><a href="{%url 'about'%}">My</a></li>
+                            <li><a href="{%url 'about'%}">Homepage</a></li>
+                        </ul>
+                        <ul class="item-right">
+                            
+                            <li><a href="{%url 'about'%}">About</a></li>
+                            <li><a href="{%url 'about'%}">My</a></li>
+                            <li><a href="{%url 'about'%}">Homepage</a></li>
+                        </ul>
+        
+                    </nav>
+                </footer>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+<style>
+        a {
+            all: unset;
+        }
+    
+        ul {
+            all: unset;
+        }
+    
+        .navbar {
+            text-align: right;
+    
+        }
+    
+        .navbar ul li {
+            display: inline;
+            margin-left: 10px;
+        }
+    
+        .container {
+            text-align: center;
+           margin-top: 7% ;
+    
+        }
+    
+        .count {
+            margin-top: 150 px;
+        }
+    
+        input {
+            all: unset;
+        }
+    
+        .search {
+            text-align: left;
+            width: 50%;
+            height: 35px;
+            background-color: whitesmoke;
+            padding-left: 15px;
+            border-radius: 15px;
+    
+        }
+    
+        .search:hover{
+            background-color: #eeeeee;
+        }
+    
+        .오퍼드 {font-size: small}
+    
+        footer {
+            background-color: #eeeeee;
+            text-align : center;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+            
+        }
+        .item-left {
+            float: left;
+        }
+        .item-right {
+            float: right;
+        }
+        .foot-nav ul li {
+            display: inline;
+            margin-left: 10px;
+        }
+    </style>
